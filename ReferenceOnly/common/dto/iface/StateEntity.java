@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.egovja.tatransform.licencingmanagement.common.dto.iface;
+
+/**
+ * A common interface pattern for service entities.
+ *
+ * @author Hiren Morzariya
+ * @since 2021/03/23
+ */
+public interface StateEntity extends HasPrimaryKey, HasState, HasMeta {
+
+    /**
+     * A display name for this entity.
+     *
+     * @return
+     * @return Name
+     */
+    public String getName();
+
+    /**
+     * A description of the entity.
+     *
+     * @return
+     * @return Description
+     */
+    public RichText getDescription();
+}
